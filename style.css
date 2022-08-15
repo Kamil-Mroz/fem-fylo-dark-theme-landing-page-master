@@ -1,10 +1,55 @@
 /* // https://piccalil.li/blog-a-modern-css-reset */
 
+/*
+---  TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+---  WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  --clr-primary-300: hsl(219, 30%, 18%);
+  --clr-primary-500: hsl(217, 28%, 15%);
+  --clr-primary-700: hsl(218, 28%, 13%);
+  --clr-primary-900: hsl(216, 53%, 9%);
+
+  --clr-accent-500: hsl(176, 68%, 64%);
+  --clr-accent-700: hsl(198, 60%, 50%);
+
+  --clr-error-500: hsl(0, 100%, 63%);
+
+  --clr-neutral-400: hsl(0, 0%, 100%);
+
+  --ff-secondary: "Raleway", sans-serif;
+  --ff-primary: "Open Sans", sans-serif;
+
+  --ff-body: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-300: 1.4rem;
+  --fs-400: 1.6rem;
+  --fs-500: 1.8rem;
+  --fs-600: 2rem;
+  --fs-700: 2.4rem;
+  --fs-800: 3rem;
+  --fs-900: 3.6rem;
+
+  -fs-primary-heading: var(--fs-900);
+  -fs-secondary-heading: var(--fs-800);
+}
+
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 /* Remove default margin */
@@ -25,9 +70,19 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--ff-body);
+}
+
+html,
+body {
+  height: 100%;
+}
+
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -39,17 +94,10 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+svg {
   max-width: 100%;
   display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -66,4 +114,41 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.text-color-neutral {
+  color: var(--clr-neutral-400);
+}
+.ff-secondary {
+  font-family: var(--ff-secondary);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-900 {
+  font-size: var(--fs-900);
 }
