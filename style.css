@@ -85,6 +85,8 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-400);
 }
 
 /* A elements that don't have a class get default styles */
@@ -120,13 +122,6 @@ svg {
   font-weight: var(--fw-bold);
 }
 
-.fw-regular {
-  font-weight: var(--fw-regular);
-}
-
-.text-color-neutral {
-  color: var(--clr-neutral-400);
-}
 .ff-secondary {
   font-family: var(--ff-secondary);
 }
@@ -151,4 +146,8 @@ svg {
 }
 .fs-900 {
   font-size: var(--fs-900);
+}
+
+.flex {
+  display: flex;
 }
