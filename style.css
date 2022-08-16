@@ -1,29 +1,16 @@
 /* // https://piccalil.li/blog-a-modern-css-reset */
 
-/*
----  TYPOGRAPHY SYSTEM
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
----  WHITESPACE
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
-
 :root {
-  --clr-primary-300: hsl(219, 30%, 18%);
-  --clr-primary-500: hsl(217, 28%, 15%);
-  --clr-primary-700: hsl(218, 28%, 13%);
-  --clr-primary-900: hsl(216, 53%, 9%);
+  --clr-primary-400: hsl(0, 0%, 100%);
+  --clr-secondary-600: hsl(219, 30%, 18%);
+  --clr-secondary-700: hsl(217, 28%, 15%);
+  --clr-secondary-800: hsl(218, 28%, 13%);
+  --clr-secondary-900: hsl(216, 53%, 9%);
 
-  --clr-accent-500: hsl(176, 68%, 64%);
-  --clr-accent-700: hsl(198, 60%, 50%);
+  --clr-accent-400: hsl(176, 68%, 64%);
+  --clr-accent-600: hsl(198, 60%, 50%);
 
-  --clr-error-500: hsl(0, 100%, 63%);
-
-  --clr-neutral-400: hsl(0, 0%, 100%);
+  --clr-error-400: hsl(0, 100%, 63%);
 
   --ff-secondary: "Raleway", sans-serif;
   --ff-primary: "Open Sans", sans-serif;
@@ -33,16 +20,15 @@
   --fw-regular: 400;
   --fw-bold: 700;
 
-  --fs-300: 1.4rem;
+  --fs-300: 1.6rem;
   --fs-400: 1.6rem;
   --fs-500: 1.8rem;
   --fs-600: 2rem;
   --fs-700: 2.4rem;
   --fs-800: 3rem;
-  --fs-900: 3.6rem;
+  --fs-900: 4rem;
 
-  -fs-primary-heading: var(--fs-900);
-  -fs-secondary-heading: var(--fs-800);
+  --fs-body: var(--fs-400);
 }
 
 /* Box sizing rules */
@@ -72,8 +58,6 @@ html:focus-within {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
-  font-family: var(--ff-body);
 }
 
 html,
@@ -85,8 +69,6 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-weight: var(--fw-regular);
-  color: var(--clr-neutral-400);
 }
 
 /* A elements that don't have a class get default styles */
@@ -151,3 +133,101 @@ svg {
 .flex {
   display: flex;
 }
+
+/* General styles */
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-body);
+}
+
+body {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--clr-primary-400);
+}
+
+.heading-primary {
+}
+
+.bg-secondary-700 {
+  background-color: var(--clr-secondary-700);
+}
+
+.bg-secondary-800 {
+  background-color: var(--clr-secondary-800);
+}
+.bg-secondary-900 {
+  background-color: var(--clr-secondary-900);
+}
+.bg-secondary-600 {
+  background-color: var(--clr-secondary-600);
+}
+
+/* Header */
+
+.header {
+  padding: 6.4rem 4.8rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+}
+.nav__link:link,
+.nav__link:visited {
+  color: var(--clr-primary-400);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.4rem;
+  font-weight: var(--fw-regular);
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+  border-bottom: 1px solid currentColor;
+  transform: scale(1.05);
+}
+
+/* HERO */
+
+.section-hero {
+  padding: 2.4rem 0 6.4rem;
+}
+.center {
+  margin-inline: auto;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero__img {
+  margin-bottom: 2.4rem;
+}
+
+.hero__text {
+  width: 55ch;
+  margin-bottom: 1.6rem;
+}
+
+/*
+---  TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+---  WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

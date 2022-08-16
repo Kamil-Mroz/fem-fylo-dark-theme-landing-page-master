@@ -33,53 +33,52 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <svg class="logo">
-        <use xlink:href="images/logo.svg"></use>
-      </svg>
+    <header class="header bg-secondary-700">
+      <img src="images/logo.svg" alt="Fylo Logo" class="logo" />
 
       <nav class="nav">
-        <ul role="list" class="nav__list">
+        <ul aria-label="Primary" role="list" class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-          <li class="nav__item"><a href="#" class="nav__link"></a>Team</li>
-          <li class="nav__item"><a href="#" class="nav__link"></a>Sign in</li>
+          <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
         </ul>
       </nav>
     </header>
     <!-- Main content -->
-    <main>
+    <main class="bg-secondary-800">
       <!-- Hero section-->
-      <section class="section-hero">
-        <figure class="hero__img">
-          <img
-            src="images/illustration-intro.png"
-            alt="Two people taking files from a folder"
-          />
-        </figure>
-        <h1 class="heading-primary fs-900 ff-secondary fw-bold">
-          All your files in one secure location, accessible anywhere.
-        </h1>
-        <p class="hero__text">
-          Fylo stores all your most important files in one secure location.
-          Access them wherever you need, share and collaborate with friends
-          family, and co-workers.
-        </p>
-        <a href="#" class="btn ff-secondary fw-bold">Get Started</a>
-        <svg class="hero__bg--desktop">
-          <use xlink:href="images/bg-curvy-desktop.svg"></use>
-        </svg>
-        <svg class="hero__bg--mobile">
-          <use xlink:href="images/bg-curvy-mobile.svg"></use>
-        </svg>
+      <section class="section-hero bg-secondary-700">
+        <div class="center">
+          <img src="images/illustration-intro.png" alt="" class="hero__img" />
+
+          <h1 class="heading-primary fs-900 ff-secondary fw-bold">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="hero__text">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers.
+          </p>
+          <a href="#" class="btn ff-secondary fw-bold">Get Started</a>
+        </div>
+        <img
+          src="images/bg-curvy-desktop.svg"
+          class="hero__bg--desktop"
+          alt=""
+        />
+        <img src="images/bg-curvy-mobile.svg" class="hero__bg--mobile" alt="" />
       </section>
 
       <!-- Features section -->
 
       <section class="section-features">
         <div class="feature__box">
-          <svg class="feature__icon">
-            <use xlink:href="images/icon-access-anywhere.svg"></use>
-          </svg>
+          <img
+            src="images/icon-access-anywhere.svg"
+            class="feature__icon"
+            alt=""
+          />
+
           <p class="feature__title fw-bold">Access your files, anywhere</p>
           <p class="feature__details">
             The ability to use a smartphone, tablet, or computer to access your
@@ -87,9 +86,8 @@
           </p>
         </div>
         <div class="feature__box">
-          <svg class="feature__icon">
-            <use xlink:href="images/icon-security.svg"></use>
-          </svg>
+          <img src="images/icon-security.svg" class="feature__icon" alt="" />
+
           <p class="feature__title fw-bold">Security you can trust</p>
           <p class="feature__details">
             2-factor authentication and user-controlled encryption are just a
@@ -97,9 +95,12 @@
           </p>
         </div>
         <div class="feature__box">
-          <svg class="feature__icon">
-            <use xlink:href="images/icon-collaboration.svg"></use>
-          </svg>
+          <img
+            src="images/icon-collaboration.svg"
+            class="feature__icon"
+            alt=""
+          />
+
           <p class="feature__title fw-bold">Real-time collaboration</p>
           <p class="feature__details">
             Securely share files and folders with friends, family and colleagues
@@ -107,9 +108,8 @@
           </p>
         </div>
         <div class="feature__box">
-          <svg class="feature__icon">
-            <use xlink:href="images/icon-any-file.svg"></use>
-          </svg>
+          <img src="images/icon-any-file.svg" class="feature__icon" alt="" />
+
           <p class="feature__title fw-bold">Store any type of file</p>
           <p class="feature__details">
             Whether you're sharing holidays photos or work documents, Fylo has
@@ -124,10 +124,7 @@
       <section class="section-about">
         <div class="about__img--box">
           <picture class="about__img">
-            <img
-              src="images/illustration-stay-productive.png"
-              alt="Group of people communicating"
-            />
+            <img src="images/illustration-stay-productive.png" alt="" />
           </picture>
           <div class="about__text--box">
             <h2 class="heading-secondary fs-800 fw-bold ff-secondary">
@@ -143,9 +140,12 @@
             </p>
             <a href="#" class="btn-hot ff-secondary"
               >See how Fylo works
-              <span
-                ><svg class="svg__link">
-                  <use xlink:href="images/icon-arrow.svg"></use></svg></span
+              <span>
+                <img
+                  src="images/icon-arrow.svg"
+                  class="svg__link"
+                  alt=""
+                /> </span
             ></a>
           </div>
         </div>
@@ -155,7 +155,7 @@
 
       <section class="section-testimonials">
         <img src="images/bg-quotes.png" alt="Quote sign" class="quotes" />
-        <div class="testimonial">
+        <div class="testimonial bg-secondary-600">
           <p class="testimonial__text">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
@@ -170,7 +170,7 @@
           </div>
         </div>
 
-        <div class="testimonial">
+        <div class="testimonial bg-secondary-600">
           <p class="testimonial__text">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
@@ -185,7 +185,7 @@
           </div>
         </div>
 
-        <div class="testimonial">
+        <div class="testimonial bg-secondary-600">
           <p class="testimonial__text">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
@@ -202,7 +202,7 @@
       </section>
       <!-- CTA section -->
       <section class="section-cta">
-        <div class="cta">
+        <div class="cta bg-secondary-700">
           <h2 class="heading-secondary fw-bold fs-800 ff-secondary">
             Get early access today
           </h2>
@@ -227,33 +227,29 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <svg class="logo">
-        <use xlink:href="images/logo.svg"></use>
-      </svg>
+    <footer class="footer bg-secondary-900">
+      <img src="images/logo.svg" alt="Fylo Logo" class="logo" />
+
       <div class="footer__grid">
         <address class="location">
-          <svg class="footer__icon">
-            <use xlink:href=" images/icon-location.svg"></use>
-          </svg>
+          <img src="images/icon-location.svg" alt="" class="footer__icon" />
+
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </address>
         <div class="contact">
           <div class="phone">
-            <svg class="footer__icon">
-              <use xlink:href="images/icon-phone.svg"></use>
-            </svg>
+            <img src="images/icon-phone.svg" alt="" class="footer__icon" />
+
             <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
           </div>
           <div class="email">
-            <svg class="footer__icon">
-              <use xlink:href="images/icon-email.svg"></use>
-            </svg>
+            <img src="images/icon-email.svg" alt="" class="footer__icon" />
+
             <a href="mailto:example@fylo.com">example@fylo.com</a>
           </div>
         </div>
-        <ul role="list" class="footer__list">
+        <ul aria-label="Footer" role="list" class="footer__list">
           <li class="footer__item">
             <a href="#" class="footer__link">About Us</a>
           </li>
@@ -267,7 +263,8 @@
             <a href="#" class="footer__link">Blog</a>
           </li>
         </ul>
-        <ul role="list" class="footer__list">
+
+        <ul aria-label="Footer" role="list" class="footer__list">
           <li class="footer__item">
             <a href="#" class="footer__link">Contact Us</a>
           </li>
