@@ -20,7 +20,7 @@
   --fw-regular: 400;
   --fw-bold: 700;
 
-  --fs-300: 1.6rem;
+  --fs-300: 1.4rem;
   --fs-400: 1.6rem;
   --fs-500: 1.8rem;
   --fs-600: 2rem;
@@ -28,7 +28,7 @@
   --fs-800: 3rem;
   --fs-900: 4rem;
 
-  --fs-body: var(--fs-400);
+  --fs-body: var(--fs-300);
 }
 
 /* Box sizing rules */
@@ -249,16 +249,53 @@ body {
   width: 55ch;
   margin-bottom: 3rem;
 }
+
 .hero__bg--desktop {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: none;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 23.4375em) {
   .hero__bg--mobile {
     display: none;
   }
+
+  .hero__bg--desktop {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/* Features */
+
+.section-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 40%));
+  /* on small screens */
+  padding-inline: 2.4rem;
+  padding-bottom: 12.8rem;
+  gap: 8rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.feature__box {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  max-width: 35em;
+}
+
+.feature__icon {
+  height: 6.4rem;
+  margin-bottom: 3.2rem;
+}
+.feature__title {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
 }
 
 /*
