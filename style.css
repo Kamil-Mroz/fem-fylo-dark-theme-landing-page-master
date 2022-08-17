@@ -156,7 +156,7 @@ body {
   font-weight: var(--fw-regular);
   color: var(--clr-primary-400);
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -175,7 +175,7 @@ body {
   padding: 1.4rem 6.4rem;
 }
 .btn--narrow {
-  padding: 0;
+  padding: 1.4rem 3.6rem;
 }
 
 .btn:hover,
@@ -442,7 +442,7 @@ body {
 
 /* Testimonials */
 .section-testimonials {
-  padding: 5.5rem 2.4rem 9.6rem;
+  padding: 5.5rem 2.4rem 4.8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 25%));
   justify-content: center;
@@ -493,6 +493,73 @@ body {
   }
 }
 
+/* CTA  */
+.section-cta {
+  padding: 2rem 2.4rem;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: min(90rem, 100%);
+  border-radius: 9px;
+  text-align: center;
+  padding: 4.2rem;
+  position: relative;
+  transform: translateY(50%);
+}
+.cta__text {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  width: 100%;
+}
+.form__input {
+  font-family: inherit;
+  border-radius: 100vmax;
+  border: none;
+  width: 60%;
+  padding: 1.4rem 3.6rem;
+}
+
+.form__input:invalid {
+  color: var(--clr-error-400);
+}
+.form__input::placeholder {
+  opacity: 0.7;
+}
+.button {
+  display: block;
+  background-color: transparent;
+  color: var(--clr-primary-400);
+  font-family: inherit;
+  border: none;
+  width: 100%;
+}
+
+@media (max-width: 50em) {
+  .cta__text {
+    width: 90%;
+  }
+}
+@media (max-width: 40em) {
+  .form__input {
+    width: 80%;
+  }
+  .button {
+    width: 100%;
+  }
+}
 /*
 ---  TYPOGRAPHY SYSTEM
 
