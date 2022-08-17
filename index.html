@@ -254,25 +254,29 @@
 
     <!-- FOOTER -->
     <footer class="footer bg-secondary-900">
-      <img src="images/logo.svg" alt="Fylo Logo" class="logo" />
+      <img src="images/logo.svg" alt="Fylo Logo" class="logo logo__footer" />
 
       <div class="footer__grid">
-        <address class="location">
+        <address class="location flex-footer">
           <img src="images/icon-location.svg" alt="" class="footer__icon" />
 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </address>
         <div class="contact">
-          <div class="phone">
+          <div class="phone flex-footer">
             <img src="images/icon-phone.svg" alt="" class="footer__icon" />
 
-            <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+            <a href="tel:+1-543-123-4567" class="footer__contact"
+              >+1-543-123-4567</a
+            >
           </div>
-          <div class="email">
+          <div class="email flex-footer">
             <img src="images/icon-email.svg" alt="" class="footer__icon" />
 
-            <a href="mailto:example@fylo.com">example@fylo.com</a>
+            <a href="mailto:example@fylo.com" class="footer__contact"
+              >example@fylo.com</a
+            >
           </div>
         </div>
         <ul aria-label="Footer" role="list" class="footer__list">
@@ -315,9 +319,17 @@
       </div>
       <p class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd"
+          target="_blank"
+          class="footer__contact footer__contact--hot"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Kamil Mróz</a>.
+        >. Coded by
+        <a
+          href="https://github.com/Kamil-Mroz"
+          class="footer__contact footer__contact--hot"
+          >Kamil Mróz</a
+        >.
       </p>
     </footer>
   </body>
