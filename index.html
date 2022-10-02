@@ -2,9 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
 
     <script
       type="module"
@@ -18,7 +28,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -33,13 +46,39 @@
   <body>
     <!-- Header -->
     <header class="header bg-secondary-700">
-      <img src="images/logo.svg" alt="Fylo Logo" class="logo" />
+      <img
+        src="images/logo.svg"
+        alt="Fylo Logo"
+        class="logo"
+      />
 
       <nav class="nav">
-        <ul aria-label="Primary" role="list" class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+        <ul
+          aria-label="Primary"
+          role="list"
+          class="nav__list"
+        >
+          <li class="nav__item">
+            <a
+              href="#feature"
+              class="nav__link"
+              >Features</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#about"
+              class="nav__link"
+              >Team</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#contact"
+              class="nav__link"
+              >Sign in</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -64,7 +103,9 @@
                 location. Access them wherever you need, share and collaborate
                 with friends family, and co-workers.
               </p>
-              <a href="#" class="btn btn--wide ff-secondary fw-bold"
+              <a
+                href="#"
+                class="btn btn--wide ff-secondary fw-bold"
                 >Get Started</a
               >
             </div>
@@ -83,7 +124,10 @@
 
         <!-- Features section -->
 
-        <section class="section-features bg-secondary-800">
+        <section
+          class="section-features bg-secondary-800"
+          id="feature"
+        >
           <div class="feature__box">
             <img
               src="images/icon-access-anywhere.svg"
@@ -98,7 +142,11 @@
             </p>
           </div>
           <div class="feature__box">
-            <img src="images/icon-security.svg" class="feature__icon" alt="" />
+            <img
+              src="images/icon-security.svg"
+              class="feature__icon"
+              alt=""
+            />
 
             <p class="feature__title fw-bold">Security you can trust</p>
             <p class="feature__details">
@@ -121,7 +169,11 @@
             </p>
           </div>
           <div class="feature__box">
-            <img src="images/icon-any-file.svg" class="feature__icon" alt="" />
+            <img
+              src="images/icon-any-file.svg"
+              class="feature__icon"
+              alt=""
+            />
 
             <p class="feature__title fw-bold">Store any type of file</p>
             <p class="feature__details">
@@ -134,10 +186,16 @@
 
         <!-- About section -->
 
-        <section class="section-about bg-secondary-800">
+        <section
+          class="section-about bg-secondary-800"
+          id="about"
+        >
           <div class="about__img--box">
             <picture class="about__img">
-              <img src="images/illustration-stay-productive.png" alt="" />
+              <img
+                src="images/illustration-stay-productive.png"
+                alt=""
+              />
             </picture>
           </div>
           <div class="about__text--box">
@@ -154,16 +212,24 @@
               colleagues for live collaboration. No email attachments required.
             </p>
 
-            <a href="#" class="btn-hot ff-secondary"
+            <a
+              href="#"
+              class="btn-hot ff-secondary"
               >See how Fylo works
-              <img src="/images/icon-arrow.svg" alt="" class="arrow"
+              <img
+                src="/images/icon-arrow.svg"
+                alt=""
+                class="arrow"
             /></a>
           </div>
         </section>
 
         <!-- Testimonials section -->
 
-        <section class="section-testimonials bg-secondary-800">
+        <section
+          class="section-testimonials bg-secondary-800"
+          id="testimonials"
+        >
           <div class="testimonial bg-secondary-600">
             <p class="testimonial__text">
               Fylo has improved our team productivity by an order of magnitude.
@@ -181,7 +247,11 @@
                 <p class="user__career">Founder & CEO, Huddle</p>
               </div>
             </div>
-            <img src="/images/bg-quotes.png" alt="" class="quotes" />
+            <img
+              src="/images/bg-quotes.png"
+              alt=""
+              class="quotes"
+            />
           </div>
 
           <div class="testimonial bg-secondary-600">
@@ -223,7 +293,10 @@
           </div>
         </section>
         <!-- CTA section -->
-        <section class="section-cta bg-secondary-800">
+        <section
+          class="section-cta bg-secondary-800"
+          id="contact"
+        >
           <div class="cta bg-secondary-700">
             <h2 class="heading-secondary fw-bold fs-800 ff-secondary">
               Get early access today
@@ -233,7 +306,10 @@
               extremely generous. If you have any questions, our support team
               would be happy to help you.
             </p>
-            <form action="" class="form">
+            <form
+              action=""
+              class="form"
+            >
               <input
                 class="form__input"
                 type="email"
@@ -253,66 +329,138 @@
 
     <!-- FOOTER -->
     <footer class="footer bg-secondary-900">
-      <img src="images/logo.svg" alt="Fylo Logo" class="logo logo__footer" />
+      <img
+        src="images/logo.svg"
+        alt="Fylo Logo"
+        class="logo logo__footer"
+      />
 
       <div class="footer__grid">
         <address class="location flex-footer">
-          <img src="images/icon-location.svg" alt="" class="footer__icon" />
+          <img
+            src="images/icon-location.svg"
+            alt=""
+            class="footer__icon"
+          />
 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </address>
         <div class="contact">
           <div class="phone flex-footer">
-            <img src="images/icon-phone.svg" alt="" class="footer__icon" />
+            <img
+              src="images/icon-phone.svg"
+              alt=""
+              class="footer__icon"
+            />
 
-            <a href="tel:+1-543-123-4567" class="footer__contact"
+            <a
+              href="tel:+1-543-123-4567"
+              class="footer__contact"
               >+1-543-123-4567</a
             >
           </div>
           <div class="email flex-footer">
-            <img src="images/icon-email.svg" alt="" class="footer__icon" />
+            <img
+              src="images/icon-email.svg"
+              alt=""
+              class="footer__icon"
+            />
 
-            <a href="mailto:example@fylo.com" class="footer__contact"
+            <a
+              href="mailto:example@fylo.com"
+              class="footer__contact"
               >example@fylo.com</a
             >
           </div>
         </div>
-        <ul aria-label="Footer" role="list" class="footer__list">
+        <ul
+          aria-label="Footer"
+          role="list"
+          class="footer__list"
+        >
           <li class="footer__item">
-            <a href="#" class="footer__link">About Us</a>
+            <a
+              href="#"
+              class="footer__link"
+              >About Us</a
+            >
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Jobs</a>
+            <a
+              href="#"
+              class="footer__link"
+              >Jobs</a
+            >
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Press</a>
+            <a
+              href="#"
+              class="footer__link"
+              >Press</a
+            >
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Blog</a>
+            <a
+              href="#"
+              class="footer__link"
+              >Blog</a
+            >
           </li>
         </ul>
 
-        <ul aria-label="Footer" role="list" class="footer__list">
+        <ul
+          aria-label="Footer"
+          role="list"
+          class="footer__list"
+        >
           <li class="footer__item">
-            <a href="#" class="footer__link">Contact Us</a>
+            <a
+              href="#"
+              class="footer__link"
+              >Contact Us</a
+            >
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Terms</a>
+            <a
+              href="#"
+              class="footer__link"
+              >Terms</a
+            >
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link"> Privacy</a>
+            <a
+              href="#"
+              class="footer__link"
+            >
+              Privacy</a
+            >
           </li>
         </ul>
         <div class="social">
-          <a href="#" class="social__link"
-            ><ion-icon name="logo-facebook" class="social__icon"></ion-icon
+          <a
+            href="#"
+            class="social__link"
+            ><ion-icon
+              name="logo-facebook"
+              class="social__icon"
+            ></ion-icon
           ></a>
-          <a href="#" class="social__link"
-            ><ion-icon name="logo-twitter" class="social__icon"></ion-icon
+          <a
+            href="#"
+            class="social__link"
+            ><ion-icon
+              name="logo-twitter"
+              class="social__icon"
+            ></ion-icon
           ></a>
-          <a href="#" class="social__link"
-            ><ion-icon name="logo-instagram" class="social__icon"></ion-icon
+          <a
+            href="#"
+            class="social__link"
+            ><ion-icon
+              name="logo-instagram"
+              class="social__icon"
+            ></ion-icon
           ></a>
         </div>
       </div>

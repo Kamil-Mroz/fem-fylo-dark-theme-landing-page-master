@@ -12,8 +12,8 @@
 
   --clr-error-400: hsl(0, 100%, 63%);
 
-  --ff-secondary: "Raleway", sans-serif;
-  --ff-primary: "Open Sans", sans-serif;
+  --ff-secondary: 'Raleway', sans-serif;
+  --ff-primary: 'Open Sans', sans-serif;
 
   --ff-body: var(--ff-primary);
 
@@ -46,8 +46,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -58,6 +58,7 @@ html:focus-within {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -366,6 +367,7 @@ body {
 /* Features */
 
 .section-features {
+  scroll-margin-block-start: 25rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 30%));
   /* on small screens */
@@ -402,6 +404,8 @@ body {
 /* About */
 
 .section-about {
+  scroll-margin-block-start: 25rem;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 40%));
   gap: 4.8rem;
